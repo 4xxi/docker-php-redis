@@ -1,9 +1,10 @@
 FROM 4xxi/php:7.2.2-fpm-alpine3.7
 
-RUN apk upgrade --update && apk add \
+RUN apk upgrade --no-cache --update && apk add \
 libc-dev \
 zlib-dev \
 icu-dev \
+php7-zip \
 autoconf \
 gcc \
 git \
